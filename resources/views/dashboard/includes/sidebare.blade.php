@@ -156,7 +156,7 @@
                data-i18n="nav.templates.main"> {{__('admin/sidebar.sittings')}}</span></a>
                 <ul class="menu-content">
                     <li><a class="menu-item" href=""
-                           data-i18n="nav.templates.vert.main">  {{__('admin/sidebar.sittings')}}  </a>
+                           data-i18n="nav.templates.vert.main"> {{__('admin/sidebar.sittings')}}  </a>
                         <ul class="menu-content">
                             <li><a class="menu-item" href="{{ route('edit.shipping.methods', 'free') }}"
                                    data-i18n="nav.templates.vert.classic_menu">{{__('admin/sidebar.free shipping')}}  </a>
