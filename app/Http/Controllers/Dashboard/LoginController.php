@@ -26,5 +26,16 @@ class LoginController extends Controller
         }
         return redirect()->back()->with(['error'=>'data error']);
     }
+
+    public function logout()
+    {
+      $gaurd = $this->gitGaurd();
+      $gaurd -> logout();
+
+    }
+    private function gitGaurd()
+    {
+        return auth('admin');
+    }
 }
 

@@ -26,7 +26,7 @@ Route::group(
             Route::get('login','LoginController@login')->name('admin.login');
             Route::post('login','LoginController@postLogin')->name('admin.post.login');
             Route::get('/','DashboardController@index')->name('admin.dashboard');
-          
+            Route::get('logout','LoginController@logout')->name('admin.logout');
            
            // first page if auth
              Route::group(['prefix' => 'settings'], function(){
